@@ -16,10 +16,13 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
+                sudo /home/team26/miniconda3/bin/conda init
+            
                 source ~/miniconda3/bin/activate mlip 
 
                 # TODO Complete the command to run pytest
-                pytest
+                
+                pytest --maxfail=1 --disable-warnings
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
                 echo 'pytest  runned'
