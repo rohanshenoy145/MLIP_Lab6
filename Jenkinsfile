@@ -23,7 +23,7 @@ pipeline {
 
                 # TODO Complete the command to run pytest
                 
-                pytest --maxfail=1 --disable-warnings
+                /home/rgshenoy/miniconda3/envs/mlip/bin/pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
                 echo 'pytest  runned'
